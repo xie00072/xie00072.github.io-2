@@ -520,14 +520,16 @@
         <section class="section2">
             <div class="AC">
                 <picture>
-                    <source media="(max-width: 768px)"
-                            srcset="school-320.jpg">
-                    <source media="(max-width: 1200px)"
-                            srcset="school-768.jpg">
-                    <source media="(min-width: 1200px)"
-                            srcset="school-1200.jpg">
-                    <img src="school-3008.jpg" alt="school">
+                    <source srcset="images/desktop-school.png,
+                                    images/desktop-school@2x.png 2x"
+                            media="(min-width: 990px)">
+                    <source srcset="images"> 
                 </picture>
+                <div class="content">
+                    <h2>Discover.</h2>
+                    <h3>Algonquin College</h3>
+                    <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
+                </div>
             </div>
         </section>
     </main>
