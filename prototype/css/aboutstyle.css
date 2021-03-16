@@ -252,7 +252,7 @@ header {
 .friends-content,
 .fitness-content,
 .climbing-content {
-    padding: 0.5em 2em;
+    padding: 2em;
 }
 
 .friends {
@@ -378,7 +378,7 @@ footer {
     }
 
     .nav-list li:first-child {
-        flex: 2;
+        flex: 3;
     }
 
     .nav-list li {
@@ -399,11 +399,14 @@ footer {
         margin: 2em 0 0.5em;
     }
 
+    .banner-about h1{
+        margin: 0;
+    }
     /* adjust margin of section2 */
     .who,
     .what,
     .where {
-        padding: 2em 4em;
+        padding: 1em 4em;
     }
 
     /* realign services section*/
@@ -432,6 +435,9 @@ footer {
     }
 
 
+    .subscribe {
+        padding: 0.8em 0;
+    }
     .subscribe p {
         display: inline-block;
         padding-right: 5em;
@@ -475,8 +481,8 @@ footer {
 
     /* Style the navigation */
     .main-nav {
-        padding: 0.5rem;
-    }
+		padding: 0;
+	}
 
     .nav-list {
         display: flex;
@@ -486,7 +492,7 @@ footer {
 
     .nav-list li:first-child {
 
-        flex: 1.5;
+        flex: 1;
     }
 
     .nav-list li {
@@ -503,6 +509,7 @@ footer {
 
     .c1 {
         padding: 0 5em 0 0;
+        margin: 1em 0;
     }
 
     .c1 p {
@@ -521,7 +528,7 @@ footer {
         grid-template-rows: 1fr;
         grid-gap: 0.5em;
 
-        margin: 0 4em;
+        margin: 6em 4em;
     }
 
     /* realign services section */
@@ -545,11 +552,18 @@ footer {
         padding: 0 3em 0 0;
     }
 
+    .subscribe {
+        padding: 1.5em 0;
+    }
 
     .subscribe p {
         display: inline-block;
         padding-right: 5em;
         font-size: 2rem;
+    }
+
+    .subscribe-button {
+        width: 12%;
     }
 
     .fitness {
@@ -571,16 +585,26 @@ footer {
     }
 
     /* realign section 4 */
-    
+    .section4 h1 {
+        margin: 2em 0;
+    }
 
     .support {
+        margin: 2em 0;
         flex-direction: row;
         justify-content: space-between;
 
 
     }
+    footer{
+		margin: 0;
+	}
 
-    /* resize back to top button */
+	/* resize back to top button */
+
+    .back {
+        top: 3em;
+    }
     .icon-back {
         padding: 0 3em;
         width: 5em;
@@ -594,7 +618,7 @@ footer {
     .footer p,
     .back p {
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1rem;
 
     }
 

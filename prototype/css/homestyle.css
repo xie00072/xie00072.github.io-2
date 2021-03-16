@@ -210,16 +210,17 @@ header {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 1em;
+	justify-items: center;
 }
 
 .categories i {
 	font-size: 3em;
-	padding: 0 1em;
+	padding: 0 0.5em;
 
 }
 
 .categories p {
-	text-align: center;
+	padding: 0 0.5em;
 	color: #26a682;
 }
 
@@ -375,7 +376,7 @@ footer {
 	.nav-list {
 		display: flex;
 		align-items: center;
-
+		justify-items: flex-start;
 	}
 
 	.nav-list li:first-child {
@@ -388,7 +389,7 @@ footer {
 
 	/* style the margin of content */
 	.introduction {
-		padding: 2em 4em;
+		padding: 2em 4em 0;
 	}
 
 	/* realign grid */
@@ -398,14 +399,16 @@ footer {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 1fr;
 		gap: 1em;
+		justify-content: center;
 	}
+
 
 	.categories i {
-		font-size: 2em;
-		padding: 0 2em;
-
+		font-size: 3em;
+		padding: 0 0.4em;
+	
 	}
-
+	
 	.categories p {
 		font-size: 1rem;
 	}
@@ -455,7 +458,8 @@ footer {
 
 
 	/* Style the "Learn More" button */
-	.learn {
+	.learn,
+	.learn2 {
 		width: 30%;
 	}
 
@@ -502,7 +506,7 @@ footer {
 
 	/* Style the navigation */
 	.main-nav {
-		padding: 0.5rem;
+		padding: 0;
 	}
 
 	.nav-list {
@@ -513,7 +517,7 @@ footer {
 
 	.nav-list li:first-child {
 
-		flex: 1.5;
+		flex: 1;
 	}
 
 	.nav-list li {
@@ -540,19 +544,12 @@ footer {
 	}
 
 	.categories {
-		margin: 3em 0;
-		display: flex;
-		flex-direction: row;
-		gap: 0;
+		justify-items: start;
 	}
 
 	.start {
-		width: 45%;
-		margin: 1em;
-	}
-
-	.scroll {
-		margin: 2em;
+		width: 40%;
+		margin: 0 0.2em;
 	}
 
 	.AC {
@@ -610,15 +607,31 @@ footer {
 	}
 
 	.learn2 {
-		left: 30em;
+			width: 10%;
+			left: 30em;
+	
 	}
-
+/* style footer */
 	footer{
-		margin: 2em 0 0;
+		margin: 0; 
+		padding: 0;
 	}
 
-	.icon-back {
-		width: 5em;
-	}
+	/* resize back to top button */
 
+	.back {
+        top: 3em;
+    }
+    .icon-back {
+        padding: 0 3em;
+        width: 5em;
+    }
+
+
+    .footer p,
+    .back p {
+        font-weight: 300;
+        font-size: 1rem;
+
+    }
 }

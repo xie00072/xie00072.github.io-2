@@ -360,7 +360,7 @@ footer {
     }
 
     .nav-list li:first-child {
-        flex: 2;
+        flex: 3;
     }
 
     .nav-list li {
@@ -437,9 +437,8 @@ footer {
 
     /* Style the navigation */
     .main-nav {
-        padding: 0.5rem;
-    }
-
+		padding: 0;
+	}
     .nav-list {
         display: flex;
         align-items: center;
@@ -448,7 +447,7 @@ footer {
 
     .nav-list li:first-child {
 
-        flex: 1.5;
+        flex: 1;
     }
 
     .nav-list li {
@@ -516,6 +515,10 @@ footer {
     }
 
      /* resize back to top button */
+
+     .back {
+        top: 3em;
+    }
      .icon-back {
         padding: 0 3em;
         width: 5em;
@@ -529,7 +532,7 @@ footer {
     .footer p,
     .back p {
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1rem;
 
     }
 
