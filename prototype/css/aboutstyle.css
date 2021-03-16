@@ -1,0 +1,605 @@
+/* ------------------------------
+            CSS  RESET
+--------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ----------------------------------
+            CUSTOME  CODE          
+------------------------------------- */
+html {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* ---------------Mobile Style---------------- */
+h1 {
+    font-size: 2.441rem;
+    font-weight: 800;
+    line-height: 1.5em;
+    margin: 0.8em 0;
+}
+
+h2 {
+    font-size: 1.953rem;
+    line-height: 1.5em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.563rem;
+    line-height: 1.5em;
+    color: #26a682;
+}
+
+p {
+    line-height: 2.5rem;
+    font-weight: 300;
+}
+
+header {
+    background-color: #3c3b3a;
+}
+
+/* Adjust the size of the logo */
+.logo {
+    width: 20%;
+    margin: 0 auto;
+}
+
+
+/* Style the navigation */
+.nav-list li {
+    text-align: center;
+
+}
+
+/* style section 1 */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    text-decoration: none;
+    padding: 1em 0;
+    color: #f2f2f2;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    font-weight: 800;
+}
+
+.section1 {
+    padding: 1em 2em;
+}
+
+.section1 p {
+    font-size: 1.5rem;
+    font-weight: 400
+}
+
+.image-construction {
+    width: 100%;
+}
+
+/* style section 2 */
+
+.banner-about {
+    width: 100%;
+    background: url(../images/about.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.banner-about h1 {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.who,
+.what,
+.where {
+    padding: 1em 2em;
+}
+
+/* Style section 3 */
+
+.banner-services {
+    width: 100%;
+    background: url(../images/coffee.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.banner-services h1 {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.break-content,
+.friends-content,
+.fitness-content,
+.climbing-content {
+    padding: 0.5em 2em;
+}
+
+.friends {
+    background-color: #f2f2f2;
+}
+
+/* Style the subscribe banner */
+
+.subscribe {
+    background-color: #3c3b3a;
+    color: #f2f2f2;
+
+    padding: 1.5em;
+    text-align: center;
+}
+
+.subscribe-button {
+    background-color: #26a682;
+    color: #f2f2f2;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 40px;
+    border: none;
+    padding: 0.5em 1.5em;
+}
+
+/* add background color to "Indoor climbing" */
+.container2 {
+    background-color: #f2f2f2;
+}
+
+/* Style section 4 */
+
+.section4 h1 {
+    font-size: 3.75rem;
+    padding: 0.5rem;
+    margin: 1rem;
+
+    text-align: center;
+}
+
+.support {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+/* Style the footer */
+footer {
+    background-color: #3c3b3a;
+}
+
+.footer {
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.563rem;
+    ;
+    color: #f2f2f2;
+    position: relative;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.6em;
+}
+
+.back {
+    position: absolute;
+    right: 1em;
+    bottom: 4em;
+    font-size: 0.6rem;
+}
+
+.icon-back {
+    width: 2em;
+    padding: 0 1.5em;
+}
+
+.back p {
+    line-height: 1em;
+}
+
+/* --------------Tablet Style---------------- */
+@media screen and (min-width: 768px) {
+
+    /* Resize fonts */
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 800;
+        line-height: 1.5em;
+        margin: 0.8em 0;
+    }
+
+    h2 {
+        font-size: 1.953rem;
+        line-height: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.563rem;
+        line-height: 1.5em;
+        color: #26a682;
+    }
+
+    p {
+        line-height: 2.5rem;
+        font-weight: 300;
+    }
+
+
+    /* Style the navigation */
+    .main-nav {
+        margin: 0 2em;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-list li:first-child {
+        flex: 2;
+    }
+
+    .nav-list li {
+        flex: 1;
+    }
+
+    /* adjust the margin of section1*/
+    .section1 {
+        padding: 2em 4em;
+    }
+
+    .section1 p {
+        font-size: 1.25rem;
+    }
+
+    .image-construction {
+        width: 90%;
+        margin: 2em 0 0.5em;
+    }
+
+    /* adjust margin of section2 */
+    .who,
+    .what,
+    .where {
+        padding: 2em 4em;
+    }
+
+    /* realign services section*/
+
+    .section3 h1 {
+        margin: 0;
+    }
+
+    .break {
+        display: flex;
+        padding: 2em 4em;
+    }
+
+    .break-content {
+        padding-left: 1.5em;
+    }
+
+    .container1 {
+        display: flex;
+        padding: 2em 4em;
+
+    }
+
+    .friends-content {
+        padding: 0 1.5em 0 0;
+    }
+
+
+    .subscribe p {
+        display: inline-block;
+        padding-right: 5em;
+    }
+
+    .fitness {
+        display: flex;
+        padding: 2em 4em;
+    }
+
+    .fitness-content {
+        padding-left: 1.5em;
+    }
+
+    .container2 {
+        display: flex;
+        padding: 2em 4em;
+    }
+
+    .climbing-content {
+        padding: 0 1.5em 0 0;
+    }
+
+
+    /* resize section 4 */
+    .support {
+        padding: 3em 15em;
+
+    }
+
+    /* resize back to top button */
+    .icon-back {
+        width: 3em;
+    }
+
+}
+
+/* --------------Desktop Style---------------- */
+@media screen and (min-width: 1200px) {
+
+
+    /* Style the navigation */
+    .main-nav {
+        padding: 0.5rem;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-list li:first-child {
+
+        flex: 1.5;
+    }
+
+    .nav-list li {
+        flex: 1;
+    }
+
+
+    /* realign section 1 */
+
+    .section1 {
+        display: flex;
+        margin: 0 4em;
+    }
+
+    .c1 {
+        padding: 0 5em 0 0;
+    }
+
+    .c1 p {
+        padding: 1em 0;
+    }
+
+    .image-construction {
+        margin: 3em;
+
+    }
+
+    /* realign section 2 */
+    .c2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 0.5em;
+
+        margin: 0 4em;
+    }
+
+    /* realign services section */
+
+    .break {
+        display: flex;
+        padding: 4em 8em;
+    }
+
+    .break-content {
+        padding-left: 3em;
+    }
+
+    .container1 {
+        display: flex;
+        padding: 4em 8em;
+
+    }
+
+    .friends-content {
+        padding: 0 3em 0 0;
+    }
+
+
+    .subscribe p {
+        display: inline-block;
+        padding-right: 5em;
+        font-size: 2rem;
+    }
+
+    .fitness {
+        display: flex;
+        padding: 4em 8em;
+    }
+
+    .fitness-content {
+        padding-left: 3em;
+    }
+
+    .container2 {
+        display: flex;
+        padding: 4em 8em;
+    }
+
+    .climbing-content {
+        padding: 0 3em 0 0;
+    }
+
+    /* realign section 4 */
+    
+
+    .support {
+        flex-direction: row;
+        justify-content: space-between;
+
+
+    }
+
+    /* resize back to top button */
+    .icon-back {
+        padding: 0 3em;
+        width: 5em;
+    }
+
+    /* style footer */
+    footer {
+        padding: 0;
+    }
+
+    .footer p,
+    .back p {
+        font-weight: 300;
+        font-size: 1.5rem;
+
+    }
+
+
+
+
+
+}

@@ -1,0 +1,624 @@
+/* ------------------------------
+            CSS  RESET
+--------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------------------
+            CUSTOME  CODE          
+------------------------------------- */
+html {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+body {
+	width: 100%;
+}
+
+/* ---------------Mobile Style---------------- */
+h1 {
+	font-size: 2.441rem;
+	font-weight: 800;
+	line-height: 1.5em;
+	margin: 0.8em 0;
+}
+
+h2 {
+	font-size: 1.953rem;
+	line-height: 1.5em;
+}
+
+h3 {
+	font-size: 1.563rem;
+	line-height: 1.5em;
+	color: #26a682;
+}
+
+p {
+	line-height: 2.5rem;
+	font-weight: 300;
+}
+
+header {
+	background-color: #3c3b3a;
+}
+
+/* Adjust the size of the logo */
+.logo {
+	width: 20%;
+	margin: 0 auto;
+}
+
+
+/* Style the navigation */
+.nav-list li {
+	text-align: center;
+
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+	display: block;
+	text-decoration: none;
+	padding: 1em 0;
+	color: #f2f2f2;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+	font-weight: 800;
+}
+
+.introduction {
+	padding: 1em 2em;
+}
+
+/* align the icons */
+.categories {
+	margin: 2em 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1em;
+}
+
+.categories i {
+	font-size: 3em;
+	padding: 0 1em;
+
+}
+
+.categories p {
+	text-align: center;
+	color: #26a682;
+}
+
+/* Style the "get started" button */
+.start {
+	
+	background-color: #26a682;
+	box-shadow: 0px 10px 10px 0px rgba(18, 74, 58, 0.5);
+	border: none;
+	border-radius: 40px;
+
+	font-size: 2rem;
+	font-weight: 600;
+	color: #f2f2f2;
+
+	padding: 0.3em 2em;
+}
+
+/* Style the image */
+.image-discover {
+	margin: 2em 0;
+	width: 100%;
+}
+
+/* Hide the scroll button in mobile mode  */
+.scroll {
+	display: none;
+}
+
+.content {
+	padding: 1em 2em;
+}
+
+/* Style the "Learn More" button */
+.learn,
+.learn2 {
+
+	background-color: #26a682;
+	box-shadow: 0px 10px 10px 0px rgba(18, 74, 58, 0.5);
+	border-radius: 40px;
+	border: none;
+
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #f2f2f2;
+
+	margin: 2em 0;
+	padding: 0.3em 1em;
+	position: absolute;
+	right: 1em;
+}
+
+/* Style the president section */
+.section3 {
+	background-color: #3c3b3a;
+	margin: 7em 0 0;
+}
+
+.president {
+	padding: 2em 2em;
+	color: #f2f2f2;
+}
+
+.simon {
+	text-align: center;
+	font-size: 1.563rem;
+}
+
+/* Style the entertainment section */
+
+.section4 picture {
+	width: 100%;
+}
+
+.discover {
+	padding: 1em 2em;
+	margin: 0 0 8em;
+}
+
+/* Style the footer */
+footer {
+	margin: 7em 0 0;
+	background-color: #3c3b3a;
+}
+
+.footer {
+	
+	padding: 1.5em 0;
+	text-align: center;
+	font-size: 1.563rem;
+	;
+	color: #f2f2f2;
+	position: relative;
+}
+
+.social-media {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 0.6em;
+}
+
+.back {
+	position: absolute;
+	right: 3em;
+	bottom: 5em;
+	font-size: 0.6rem;
+}
+
+.icon-back {
+	width: 2em;
+	padding: 0.5em 1.5em;
+}
+
+.back p {
+	line-height: 1em;
+}
+
+
+/* --------------Tablet Style---------------- */
+@media screen and (min-width: 768px) {
+
+	/* Resize fonts */
+	h1 {
+		font-size: 4.5rem;
+		font-weight: 800;
+		line-height: 1.5em;
+		margin: 0.8em 0;
+	}
+
+	h2 {
+		font-size: 1.953rem;
+		line-height: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.563rem;
+		line-height: 1.5em;
+		color: #26a682;
+	}
+
+	p {
+		line-height: 2.5rem;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+
+	/* Style the navigation */
+	.main-nav {
+		margin: 0 2em;
+	}
+
+	.nav-list {
+		display: flex;
+		align-items: center;
+
+	}
+
+	.nav-list li:first-child {
+		flex: 3;
+	}
+
+	.nav-list li {
+		flex: 1;
+	}
+
+	/* style the margin of content */
+	.introduction {
+		padding: 2em 4em;
+	}
+
+	/* realign grid */
+	.categories {
+		margin: 2em 0;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		gap: 1em;
+	}
+
+	.categories i {
+		font-size: 2em;
+		padding: 0 2em;
+
+	}
+
+	.categories p {
+		font-size: 1rem;
+	}
+
+	/* relocate the button */
+	.start {
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* resize the image */
+	.image-discover {
+		width: 50%;
+		margin: 3em auto;
+	}
+
+	/* uncover scroll button */
+
+	.scroll {
+		display: block;
+		text-align: center;
+		margin: 1em;
+	}
+
+	.scroll p {
+		font-size: 1rem;
+		padding: 0;
+	}
+
+	.arrow {
+		width: 2em;
+		transform: rotateX(180deg);
+		margin: 0 auto;
+	}
+
+	/* style the margin and font size of the content */
+
+	.content {
+		padding: 2em 4em;
+	}
+
+	.content p {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+
+	/* Style the "Learn More" button */
+	.learn {
+		width: 30%;
+	}
+
+	/* adjust the alignment of the SA President */
+	.president {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.simon {
+		flex: 1;
+		padding: 3em 0;
+	}
+
+	.president p {
+		flex: 1;
+		padding: 1em;
+	}
+
+	/* style the margin of the entertainment content */
+	.discover {
+		padding: 2em 4em;
+	}
+
+	.discover p {
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+
+	/* resize the font of "back to top" */
+	.icon-back {
+		width: 3em;
+	}
+
+	.back p {
+		font-size: 0.8rem;
+	}
+}
+
+
+/* --------------Desktop Style---------------- */
+@media screen and (min-width: 1200px) {
+
+	/* Style the navigation */
+	.main-nav {
+		padding: 0.5rem;
+	}
+
+	.nav-list {
+		display: flex;
+		align-items: center;
+
+	}
+
+	.nav-list li:first-child {
+
+		flex: 1.5;
+	}
+
+	.nav-list li {
+		flex: 1;
+	}
+
+	/* realign section 1 */
+	.introduction {
+		display: flex;
+		flex-direction: row;
+		padding: 1em 5em;
+	}
+	.c1 {
+		padding: 0 5em 0 0;
+	}
+
+	.c1 p {
+		padding: 1em 0;
+	}
+
+	.image-discover {
+		margin: 3em;
+
+	}
+
+	.categories {
+		margin: 3em 0;
+		display: flex;
+		flex-direction: row;
+		gap: 0;
+	}
+
+	.start {
+		width: 45%;
+		margin: 1em;
+	}
+
+	.scroll {
+		margin: 2em;
+	}
+
+	.AC {
+		background-color: #f2f2f2;
+		display: flex;
+		flex-direction: row;
+
+		padding: 5em 8em;
+	}
+
+	.content {
+		padding: 0 2em;
+	}
+
+
+	/* adjust "Learn More" button */
+	.learn {
+		width: 10%;
+		right: 5em;
+	}
+
+	/* realign "President" */
+	.section3 {
+		margin: 0;
+	}
+
+	.simon {
+		padding: 1em;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.simon img {
+		margin: 0 3em;
+	}
+
+	.simon p {
+		padding: 2em 0
+	}
+
+	/* realign section 4 */
+	.section4 {
+		display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1f;
+        grid-gap: 0.5em;
+	
+		padding: 5em 8em;
+	
+	}
+
+	.section4 picture {
+		grid-row: 1 / 1;
+		grid-column: 2 / 3;
+	}
+
+	.learn2 {
+		left: 30em;
+	}
+
+	footer{
+		margin: 2em 0 0;
+	}
+
+	.icon-back {
+		width: 5em;
+	}
+
+}
