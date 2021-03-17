@@ -213,6 +213,13 @@ header {
 	justify-items: center;
 }
 
+.item:hover {
+	color: #26a682;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	transition-delay: 0.2s;
+}
+
 .categories i {
 	font-size: 3em;
 	padding: 0 0.5em;
@@ -226,7 +233,7 @@ header {
 
 /* Style the "get started" button */
 .start {
-	
+
 	background-color: #26a682;
 	box-shadow: 0px 10px 10px 0px rgba(18, 74, 58, 0.5);
 	border: none;
@@ -237,7 +244,24 @@ header {
 	color: #f2f2f2;
 
 	padding: 0.3em 2em;
+
+
 }
+
+/* button animation */
+.start:hover {
+	animation-name: hover;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hover {
+	50% {
+		transform: scale(0.8);
+	}
+}
+
 
 /* Style the image */
 .image-discover {
@@ -249,6 +273,17 @@ header {
 .scroll {
 	display: none;
 }
+
+/* picture animation */
+.AC picture:hover {
+	transform: scale(1.1);
+	transition: 0.5s ease-in-out;
+}
+
+.AC picture {
+	transition: 0.5s ease-in-out;
+}
+
 
 .content {
 	padding: 1em 2em;
@@ -273,6 +308,15 @@ header {
 	right: 1em;
 }
 
+
+/* button animation */
+.learn:hover,
+.learn2:hover {
+	background-color: #3c3b3a;
+	transition: 0.3s ease-in-out;
+}
+
+
 /* Style the president section */
 .section3 {
 	background-color: #3c3b3a;
@@ -295,6 +339,16 @@ header {
 	width: 100%;
 }
 
+/* picture animation */
+.section4 picture:hover {
+	transform: scale(1.1);
+	transition: 0.5s ease-in-out;
+}
+
+.section4 picture {
+	transition: 0.5s ease-in-out;
+}
+
 .discover {
 	padding: 1em 2em;
 	margin: 0 0 8em;
@@ -307,7 +361,7 @@ footer {
 }
 
 .footer {
-	
+
 	padding: 1.5em 0;
 	text-align: center;
 	font-size: 1.563rem;
@@ -406,9 +460,9 @@ footer {
 	.categories i {
 		font-size: 3em;
 		padding: 0 0.4em;
-	
+
 	}
-	
+
 	.categories p {
 		font-size: 1rem;
 	}
@@ -530,6 +584,7 @@ footer {
 		flex-direction: row;
 		padding: 1em 5em;
 	}
+
 	.c1 {
 		padding: 0 5em 0 0;
 	}
@@ -593,12 +648,12 @@ footer {
 	/* realign section 4 */
 	.section4 {
 		display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1f;
-        grid-gap: 0.5em;
-	
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1f;
+		grid-gap: 0.5em;
+
 		padding: 5em 8em;
-	
+
 	}
 
 	.section4 picture {
@@ -607,31 +662,33 @@ footer {
 	}
 
 	.learn2 {
-			width: 10%;
-			left: 30em;
-	
+		width: 10%;
+		left: 30em;
+
 	}
-/* style footer */
-	footer{
-		margin: 0; 
+
+	/* style footer */
+	footer {
+		margin: 0;
 		padding: 0;
 	}
 
 	/* resize back to top button */
 
 	.back {
-        top: 3em;
-    }
-    .icon-back {
-        padding: 0 3em;
-        width: 5em;
-    }
+		top: 3em;
+	}
+
+	.icon-back {
+		padding: 0 3em;
+		width: 5em;
+	}
 
 
-    .footer p,
-    .back p {
-        font-weight: 300;
-        font-size: 1rem;
+	.footer p,
+	.back p {
+		font-weight: 300;
+		font-size: 1rem;
 
-    }
+	}
 }
